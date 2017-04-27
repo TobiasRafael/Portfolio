@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'random';
+    src: url('geometos.ttf');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    text-align: right;
+    height: 20px;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    background-color: #FFF;
+    padding: 15px 0px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.navbar a {
+    position: relative;
+    font-family: 'Pavanam', sans-serif;
+    text-align: right;
+    padding: 0 12px;
+    /*padding: 18px 16px;*/
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+a:hover {
+    color: #5F9EA0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    background: url(IMAGES/image8.jpg) no-repeat center center;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+    margin-top: -160px;
+}
+
+.main .container {
+    position: relative;
+    top: 100px;
+}
+
+.main h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 65px;
+    font-family: 'random';
+}
+
+.main h2 {
+    color: #fff;
+    font: 30px normal;
+    margin: 0;
+    text-align: center;
+    /* padding-left: 489px;*/
+}
+
+.main img {
+    display: block;
+    width: 250px;
+    margin: 200px auto 20px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.projects {
+    background-color: rgb(154, 205, 50);
+    text-align: center;
+    padding: 50px 0 80px;
+    height: 380px;
+}
+
+.projects .col {
+    float: left;
+    padding: 10 px;
+    width: 28%;
+}
+
+.projects h2 {
+    font-family: 'random';
+    color: #fff;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.first img {
+    width: 275px;
+    height: auto;
+}
+
+.second img {
+    margin-left: 70px;
+    width: 275px;
+    height: auto;
+}
+
+.third img {
+    margin-left: 140px;
+    width: 275px;
+    height: auto;
+}
+
+.projects img:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.about {
+    background-color: rgb(169, 169, 169);
+    text-align: center;
+    padding: 50px 0 80px;
+    height: 355px;
+}
+
+.about h2 {
+    font-family: 'random';
+    color: #fff;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.about p {
+    font-family: 'Roboto';
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1em;
+    font-weight: 100;
+    line-height: 1.3em;
+    width: 100%;
+}
+
+.contact {
+    background-color: rgb(169, 169, 169);
+    padding: 50px 0 80px;
+    height: 605px;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: 'random';
+    color: #fff;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.contact input[type=text],
+select {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'roboto';
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact textarea,
+select {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'roboto';
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact button[type="button"] {
+    cursor: pointer;
+    width: 15%;
+    border: none;
+    background: rgba(154, 205, 50, 0.9);
+    color: #FFF;
+    margin-right: -45%;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'random';
+}
+
+.contact button[type="button"]:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.footer {
+    position: static;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer p {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.footer i {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 10px;
+    float: right;
+}
+
+#fb {
+    color: navy;
+}
+
+#git {
+    color: brown;
+}
+
+#slack {
+    color: gray;
+}
+
+#linked {
+    color: blueviolet;
+}
