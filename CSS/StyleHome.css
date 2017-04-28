@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'random';
-    src: url('geometos.ttf');
+    src: url('C:/Portafolio/FONTS/geometos.ttf');
 }
 
 html,
@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+    float: right;
     position: fixed;
     text-align: right;
     height: 20px;
@@ -27,7 +28,6 @@ body {
 .navbar a {
     position: relative;
     font-family: 'Pavanam', sans-serif;
-    text-align: right;
     padding: 0 12px;
     /*padding: 18px 16px;*/
     text-decoration: none;
@@ -44,7 +44,7 @@ ul {
 }
 
 .main {
-    background: url(IMAGES/image8.jpg) no-repeat center center;
+    background: url(C:/Portafolio/IMAGES/image8.jpg) no-repeat center center;
     background-size: cover;
     height: 850px;
     position: relative;
@@ -69,7 +69,6 @@ ul {
     font: 30px normal;
     margin: 0;
     text-align: center;
-    /* padding-left: 489px;*/
 }
 
 .main img {
@@ -155,6 +154,11 @@ ul {
     font-weight: 100;
     line-height: 1.3em;
     width: 100%;
+}
+
+#highlight {
+    font-weight: bold;
+    color: navy;
 }
 
 .contact {
@@ -249,11 +253,7 @@ select {
     float: right;
 }
 
-#fb {
-    color: navy;
-}
-
-#git {
+#gith {
     color: brown;
 }
 
@@ -262,5 +262,201 @@ select {
 }
 
 #linked {
-    color: blueviolet;
+    color: navy;
+}
+
+#googleplus {
+    color: red;
+}
+
+@media only screen and (max-width: 479px) {
+    .navbar {
+        overflow: hidden;
+    }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        height: auto;
+        position: fixed;
+    }
+    .navbar.responsive a.icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        top: 13px;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    a:hover {
+        background-color: #5F9EA0;
+        color: white;
+    }
+    .about {
+        height: auto;
+        width: 100%;
+    }
+    .main {
+        background-size: cover;
+        height: 740px;
+    }
+    .main img {
+        width: 175px;
+    }
+    .main h1 {
+        font-size: 35px;
+    }
+    .main h2 {
+        font-size: 25px;
+    }
+    .about h2 {
+        font-size: 35px;
+    }
+    .about p {
+        line-height: none;
+        font-size: 25px;
+    }
+    .projects {
+        height: 520px;
+        width: 100%;
+        display: inline-block;
+    }
+    .projects h2 {
+        font-size: 35px;
+    }
+    .projects .col {
+        float: none;
+        width: auto;
+    }
+    .first img {
+        width: 185px;
+        height: auto;
+    }
+    .second img {
+        margin: 0;
+        margin-top: 8px;
+        width: 185px;
+        height: auto;
+    }
+    .third img {
+        margin: 0;
+        margin-top: 8px;
+        width: 185px;
+        height: auto;
+    }
+    .contact {
+        height: 500px;
+    }
+    .contact h2 {
+        font-size: 40px;
+    }
+    .contact input[type=text],
+    select {
+        font-weight: bold;
+        width: 70%;
+    }
+    .contact textarea,
+    select {
+        font-weight: bold;
+        width: 70%;
+        -ms-grid-rows: 4;
+    }
+    .contact button[type="button"] {
+        font-size: 13px;
+        width: 18%;
+        margin-right: -50%;
+    }
+    .footer p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .main h1 {
+        font-size: 55px;
+    }
+    .main h2 {
+        font-size: 30px;
+    }
+    .about {
+        height: 450px;
+    }
+    .about h2 {
+        font-size: 65px;
+    }
+    .about p {
+        font-size: 30px;
+    }
+    .projects {
+        height: 680px;
+        width: 100%;
+        display: inline-block;
+    }
+    .projects .col {
+        float: none;
+        width: auto;
+    }
+    .projects h2 {
+        font-size: 65px;
+    }
+    .first img {
+        width: 230px;
+        height: auto;
+    }
+    .second img {
+        margin: 0;
+        margin-top: 10px;
+        width: 230px;
+        height: auto;
+    }
+    .third img {
+        margin: 0;
+        margin-top: 10px;
+        width: 230px;
+        height: auto;
+    }
+    .contact h2 {
+        font-size: 65px;
+    }
+    .contact input[type=text],
+    select {
+        font-size: 18px;
+    }
+    .contact textarea,
+    select {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 959px) {
+    .projects .col {
+        float: left;
+        padding: 10 px;
+        width: 28%;
+    }
+    .projects h2 {
+        font-family: 'random';
+        color: #fff;
+        font-size: 50px;
+        overflow: hidden;
+    }
+    .first img {
+        width: 225px;
+        margin-left: 40px;
+    }
+    .second img {
+        margin-left: 80px;
+        width: 225px;
+    }
+    .third img {
+        margin-left: 120px;
+        width: 225px;
+    }
 }

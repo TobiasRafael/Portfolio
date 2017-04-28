@@ -1,4 +1,4 @@
-function myFunction() {
+function theNav() {
 
     var x = document.getElementById("nav");
 

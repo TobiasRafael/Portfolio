@@ -2,135 +2,18 @@
 <html>
 
 <head>
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="CSS/StyleHome.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
-    <link href="CSS/StyleHome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-    <script src="JS/ScriptHome.js"></script>
-
-    <style>
-        @media only screen and (max-width: 479px) {
-            .navbar {
-                overflow: hidden;
-            }
-            .navbar a:not(:first-child) {
-                display: none;
-            }
-            .navbar a.icon {
-                float: right;
-                display: block;
-            }
-            .navbar.responsive {
-                height: auto;
-                position: fixed;
-            }
-            .navbar.responsive a.icon {
-                position: fixed;
-                right: 0;
-                top: 0;
-            }
-            .navbar a {
-                top: 2;
-            }
-            .navbar.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-            a:hover {
-                background-color: #5F9EA0;
-                color: white;
-            }
-            .about {
-                height: auto;
-                width: 100%;
-            }
-            .main {
-                background-size: cover;
-                height: 740px;
-            }
-            .main img {
-                width: 175px;
-            }
-            .main h1 {
-                font-size: 35px;
-            }
-            .main h2 {
-                font-size: 25px;
-            }
-            .about h2 {
-                font-size: 35px;
-            }
-            .about p {
-                line-height: none;
-                font-size: 25px;
-            }
-            .projects {
-                height: 520px;
-                width: 100%;
-                display: inline-block;
-            }
-            .projects h2 {
-                font-size: 35px;
-            }
-            .projects .col {
-                float: none;
-                width: auto;
-            }
-            .first img {
-                width: 185px;
-                height: auto;
-            }
-            .second img {
-                margin: 0;
-                margin-top: 8px;
-                width: 185px;
-                height: auto;
-            }
-            .third img {
-                margin: 0;
-                margin-top: 8px;
-                width: 185px;
-                height: auto;
-            }
-            .contact {
-                height: 500px;
-            }
-            .contact h2 {
-                font-size: 40px;
-            }
-            .contact input[type=text],
-            select {
-                font-weight: bold;
-                width: 70%;
-            }
-            .contact textarea,
-            select {
-                font-weight: bold;
-                width: 70%;
-                -ms-grid-rows: 4;
-            }
-            .contact button[type="button"] {
-                font-size: 13px;
-                width: 18%;
-                margin-right: -50%;
-            }
-            .footer p {
-                display: none;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
     <div class="navbar" id="nav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" class="icon" onclick="theNav()">&#9776;</a>
         <a href="#home">Home</a>
-
         <a href="#About">About Me</b></a>
         <a href="#Work">Portfolio</b></a>
         <a href="#Contact">Contact</a>
@@ -143,17 +26,20 @@
 
     <div class="main">
         <div class="container">
-            <img src="CSS/IMAGES/RafaelGenao.jpg">
+            <img src="IMAGES/RafaelGenao.jpg">
             <h1>Hi, I'm Tobias Genao
                 <h2>Full Stack Web Developer</h2>
             </h1>
         </div>
     </div>
 
-    <div class="abouta">
+    <div class="about">
         <h2>About Me</h2>
         <p>
-            I'm a Software Ingenieering student from Dominican Republic who loves coding to build great products and help businesses succeed with their goals. Want to work together? I'd love to hear from you.
+            I'm a Software Ingenieering student from Dominican Republic who loves coding to build great products and help businesses succeed with their goals.<br>
+        </p>
+        <p id="highlight">
+            Want to work together? I'd love to hear from you.
         </p>
     </div>
 
@@ -162,7 +48,7 @@
         <div class="container">
             <div class="first">
                 <div class="col">
-                    <img src="CSS/IMAGES/cake.png" id="first">
+                    <img src="IMAGES/cake.png" id="first">
                 </div>
             </div>
         </div>
@@ -170,7 +56,7 @@
         <div class="container">
             <div class="second">
                 <div class="col">
-                    <img src="CSS/IMAGES/circus.png" id="second">
+                    <img src="IMAGES/circus.png" id="second">
                 </div>
             </div>
         </div>
@@ -179,7 +65,7 @@
         <div class="container">
             <div class="third">
                 <div class="col">
-                    <img src="CSS/IMAGES/cabin.png">
+                    <img src="IMAGES/cabin.png">
                 </div>
             </div>
         </div>
@@ -213,11 +99,14 @@
     <a>
         <p>Copyright &copy Tobias Genao 2017</p>
     </a>
-    <a href="#Contact"><i class="fa fa-facebook-square" style="font-size:30px;" id="fb"></i></a>
-
-    <a href="#Work"><i class="fa fa-slack" style="font-size:30px;" id="slack"></i></b></a>
-    <a href="#home"><i class="fa fa-linkedin-square" style="font-size:30px;" id="linked"></i></a>
+    <!--<a href="#Contact"><i class="fa fa-facebook-square" style="font-size:30px;" id="fb"></i></a>-->
+    <a href="#googleplus"><i class="fa fa-google-plus-square" aria-hidden="true" style="font-size:30px;" id="gith"></i></a>
+    <a href="#slack"><i class="fa fa-slack" aria-hidden="true" style="font-size:30px;" id="slack"></i></a>
+    <a href="#linkedin"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;" id="linked"></i></a>
+    <a href="#gith"><i class="fa fa-github-square" aria-hidden="true" style="font-size:30px;" id="linked"></i></a>
 
 </footer>
 
 </html>
+
+<script src="JS/ScriptHome.js"></script>
