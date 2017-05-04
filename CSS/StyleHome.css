@@ -9,11 +9,12 @@ body {
     padding: 0;
 }
 
-.navbar {
+.navv {
     float: right;
     position: fixed;
     text-align: right;
-    height: 20px;
+    height: 50px;
+    /* Lleva 20px */
     width: 100%;
     top: 0px;
     z-index: 1000;
@@ -21,11 +22,11 @@ body {
     padding: 15px 0px;
 }
 
-.navbar .icon {
+.navv .icon {
     display: none;
 }
 
-.navbar a {
+.navv a {
     position: relative;
     font-family: 'Pavanam', sans-serif;
     padding: 0 12px;
@@ -91,7 +92,7 @@ ul {
     background-color: rgb(154, 205, 50);
     text-align: center;
     padding: 50px 0 80px;
-    height: 380px;
+    height: 420px;
 }
 
 .projects .col {
@@ -108,18 +109,19 @@ ul {
 }
 
 .first img {
+    margin-left: -10px;
     width: 275px;
     height: auto;
 }
 
 .second img {
-    margin-left: 70px;
+    margin-left: 45px;
     width: 275px;
     height: auto;
 }
 
 .third img {
-    margin-left: 140px;
+    margin-left: 105px;
     width: 275px;
     height: auto;
 }
@@ -134,7 +136,7 @@ ul {
     background-color: rgb(169, 169, 169);
     text-align: center;
     padding: 50px 0 80px;
-    height: 355px;
+    height: 400px;
 }
 
 .about h2 {
@@ -237,8 +239,10 @@ select {
 }
 
 .footer p {
+    color: black;
     font-size: 20px;
     display: inline-block;
+    margin-top: 18px;
     margin-left: 10px;
     font-family: 'Pavanam', sans-serif;
 }
@@ -268,27 +272,67 @@ select {
     color: red;
 }
 
+
+/* MODAL SETUP */
+
+.modal-title {
+    font-size: 25px;
+}
+
+.modal-footer {
+    border-bottom: none;
+}
+
+.modal-lg {
+    max-width: 60%;
+    position: absolute;
+    top: 7%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10040;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 65%;
+    max-width: 700px;
+}
+
+.modal-p {
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.desc {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 479px) {
-    .navbar {
+    .navv {
         overflow: hidden;
     }
-    .navbar a:not(:first-child) {
+    .navv a:not(:first-child) {
         display: none;
     }
-    .navbar a.icon {
+    .navv a.icon {
         float: right;
         display: block;
     }
-    .navbar.responsive {
+    .navv.responsive {
         height: auto;
         position: fixed;
     }
-    .navbar.responsive a.icon {
+    .navv.responsive a.icon {
         position: fixed;
         right: 0;
         top: 0;
     }
-    .navbar.responsive a {
+    .navv.responsive a {
         top: 13px;
         float: none;
         display: block;
@@ -323,7 +367,8 @@ select {
         font-size: 25px;
     }
     .projects {
-        height: 520px;
+        height: 590px;
+        /*ERA 520PX;*/
         width: 100%;
         display: inline-block;
     }
@@ -335,6 +380,7 @@ select {
         width: auto;
     }
     .first img {
+        margin: 0;
         width: 185px;
         height: auto;
     }
@@ -351,7 +397,8 @@ select {
         height: auto;
     }
     .contact {
-        height: 500px;
+        height: 550px;
+        /*ERA 500px;*/
     }
     .contact h2 {
         font-size: 40px;
@@ -375,7 +422,41 @@ select {
     .footer p {
         display: none;
     }
+    .modal-title {
+        font-size: 25px;
+    }
+    .modal-footer {
+        border-bottom: none;
+    }
+    .modal-lg {
+        max-width: 100%;
+        position: absolute;
+        top: 7%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10040;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 85%;
+        max-width: 700px;
+    }
+    .modal-p {
+        font-family: 'Roboto';
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .desc {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
 }
+
+
+/*MODALS setup */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
     .main h1 {
@@ -385,7 +466,7 @@ select {
         font-size: 30px;
     }
     .about {
-        height: 450px;
+        height: 500px;
     }
     .about h2 {
         font-size: 65px;
@@ -394,7 +475,7 @@ select {
         font-size: 30px;
     }
     .projects {
-        height: 680px;
+        height: 740px;
         width: 100%;
         display: inline-block;
     }
@@ -432,6 +513,36 @@ select {
     select {
         font-size: 18px;
     }
+    .modal-title {
+        font-size: 20px;
+    }
+    .modal-footer {
+        border-bottom: none;
+    }
+    .modal-lg {
+        max-width: 100%;
+        position: absolute;
+        top: 7%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10040;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    .modal-p {
+        font-family: 'Roboto';
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+    .desc {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 959px) {
@@ -448,14 +559,44 @@ select {
     }
     .first img {
         width: 225px;
-        margin-left: 40px;
+        margin-left: -55px;
     }
     .second img {
-        margin-left: 80px;
+        margin-left: 20px;
         width: 225px;
     }
     .third img {
-        margin-left: 120px;
+        margin-left: 90px;
         width: 225px;
+    }
+    .modal-title {
+        font-size: 20px;
+    }
+    .modal-footer {
+        border-bottom: none;
+    }
+    .modal-lg {
+        max-width: 100%;
+        position: absolute;
+        top: 7%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10040;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 70%;
+        max-width: 700px;
+    }
+    .modal-p {
+        font-family: 'Roboto';
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+    .desc {
+        font-size: 0.9em;
+        font-weight: bold;
     }
 }

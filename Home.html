@@ -3,7 +3,9 @@
 
 <head>
     <title>Portfolio</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="CSS/StyleHome.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet">
@@ -12,25 +14,27 @@
 
 <body>
 
-    <div class="navbar" id="nav">
+    <div class="navv" id="navvv">
         <a href="javascript:void(0);" class="icon" onclick="theNav()">&#9776;</a>
         <a href="#home">Home</a>
-        <a href="#About">About Me</b></a>
-        <a href="#Work">Portfolio</b></a>
-        <a href="#Contact">Contact</a>
+        <a href="#about">About Me</b></a>
+        <a href="#portfolio">Portfolio</b></a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <div class="main">
+    <div class="main" id="home">
         <div class="container">
             <img src="IMAGES/RafaelGenao.jpg">
             <h1>Hi, I'm Tobias Genao
-                <h2>Full Stack Web Developer</h2>
+                <h2>Junior Full Stack Web Developer</h2>
             </h1>
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
+        <br>
         <h2>About Me</h2>
+        <br>
         <p>
             I'm a Software Engenieering student from the Dominican Republic who loves coding to build great products and help businesses succeed with their goals.<br>
         </p>
@@ -39,8 +43,10 @@
         </p>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="portfolio">
+        <br>
         <h2>Portfolio</h2>
+        <br>
         <div class="container">
             <div class="first">
                 <div class="col">
@@ -48,6 +54,38 @@
                 </div>
             </div>
         </div>
+        <!--- Cake MODAl 1st -->
+        <div class="modal fade" id="one">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Archivistic</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div>
+                            <a href="https://github.com/TobiasRafael"> <img src="IMAGES/cake.png" class="modal-content" id="one"> </a>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="desc">Description:</p>
+                        </div>
+                        <div>
+                            <p class="modal-p">Use this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons
+                                for only $12!</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="container">
             <div class="second">
@@ -57,17 +95,80 @@
             </div>
         </div>
 
+        <!--- Circus Modal 2nd -->
+
+        <div class="modal fade" id="two">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Calculator</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div>
+                            <a href="https://github.com/TobiasRafael"> <img src="IMAGES/circus.png" class="modal-content" id="two"> </a>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="desc">Description</p>
+                        </div>
+                        <div>
+                            <p class="modal-p">Use this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons
+                                for only $12!</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="third">
                 <div class="col">
-                    <img src="IMAGES/cabin.png">
+                    <img src="IMAGES/cabin.png" id="third">
                 </div>
             </div>
         </div>
     </div>
+    <!--- CABIN MODAL -->
 
-    <div class="contact">
+    <div class="modal fade" id="three">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fixed Assets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+
+                <div class="modal-body">
+                    <div>
+                        <a href="https://github.com/TobiasRafael"> <img src="IMAGES/cabin.png" class="modal-content" id="three"> </a>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="desc">Description</p>
+                    </div>
+                    <div>
+                        <p class="modal-p">Use this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for
+                            only $12!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
         <h2>Contact</h2>
+        <br>
         <form>
             <div>
                 <input type="text" placeholder="Name">
@@ -85,6 +186,9 @@
             </div>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
     <script src="JS/ScriptHome.js"></script>
 </body>
 
@@ -95,7 +199,7 @@
     <a href="#googleplus"><i class="fa fa-google-plus-square" aria-hidden="true" style="font-size:30px;" id="gith"></i></a>
     <a href="#slack"><i class="fa fa-slack" aria-hidden="true" style="font-size:30px;" id="slack"></i></a>
     <a href="#linkedin"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;" id="linked"></i></a>
-    <a href="#gith"><i class="fa fa-github-square" aria-hidden="true" style="font-size:30px;" id="linked"></i></a>
+    <a href="https://github.com/TobiasRafael"><i class="fa fa-github-square" aria-hidden="true" style="font-size:30px;" id="linked"></i></a>
 </footer>
 
 </html>
